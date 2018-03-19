@@ -14,6 +14,7 @@ public class WindowPrinter extends JFrame implements Printer {
         this.setBounds(100,100,800,512);
         this.add(scrollPane);
         this.setVisible(true);
+        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
 
     /** Prints

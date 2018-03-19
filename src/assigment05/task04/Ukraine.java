@@ -1,9 +1,7 @@
 package assigment05.task04;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 /** 4. Создать объект класса Украина, используя класс Область.
  * Методы: вывести на консоль столицу,
@@ -16,32 +14,57 @@ public class Ukraine extends Country {
 
     public static Ukraine create() {
         ukraine = new Ukraine("Ukraine");
-        ukraine.setPopulation(42248598).setCapital("Kyiv").setContinentName("Europe").setSquare(603.050);
-        addRegion(new Region(1).setRegionName("Kyivska region").setRegionCapital("Kyiv").setRegionSpace(28.121).setRegionPopulation(1732200));
-        addRegion(new Region(2).setRegionName("Zhytomyrska region").setRegionCapital("Zhytomyr").setRegionSpace(29.827).setRegionPopulation(1233202));
-        addRegion(new Region(3).setRegionName("Cherkasska region").setRegionCapital("Cherkassy").setRegionSpace(20.916).setRegionPopulation(1250925));
-        addRegion(new Region(4).setRegionName("Poltavska region").setRegionCapital("Poltava").setRegionSpace(28.750).setRegionPopulation(1462412));
-        addRegion(new Region(5).setRegionName("Chernihivska region").setRegionCapital("Chernihiv").setRegionSpace(31.903).setRegionPopulation(1054626));
-        addRegion(new Region(6).setRegionName("Vinnyntska region").setRegionCapital("Vinnytsya").setRegionSpace(26.492).setRegionPopulation(1616511));
-        addRegion(new Region(7).setRegionName("Odesska region").setRegionCapital("Odessa").setRegionSpace(33.314).setRegionPopulation(2395358));
-        addRegion(new Region(8).setRegionName("Kirovohradska region").setRegionCapital("Kropyvnytskyi").setRegionSpace(24.588).setRegionPopulation(999600));
-        addRegion(new Region(9).setRegionName("Mykolaivska region").setRegionCapital("Mykolaiv").setRegionSpace(24.585).setRegionPopulation(1164878));
-        addRegion(new Region(10).setRegionName("Khersonska region").setRegionCapital("Kherson").setRegionSpace(28.461).setRegionPopulation(1055649));
-        addRegion(new Region(11).setRegionName("Sumska region").setRegionCapital("Sumy").setRegionSpace(23.832).setRegionPopulation(1113200));
-        addRegion(new Region(12).setRegionName("Donetska region").setRegionCapital("Kramatorsk").setRegionSpace(26.517).setRegionPopulation(4320821));
-        addRegion(new Region(13).setRegionName("Luhanska region").setRegionCapital("Severodonetsk").setRegionSpace(26.683).setRegionPopulation(2167802));
-        addRegion(new Region(14).setRegionName("Dnipropetrovska region").setRegionCapital("Dnipro").setRegionSpace(31.923).setRegionPopulation(3285626));
-        addRegion(new Region(15).setRegionName("Zaporizhska region").setRegionCapital("Zaporizhzhya").setRegionSpace(27.183).setRegionPopulation(1765926));
-        addRegion(new Region(16).setRegionName("Kharkivska region").setRegionCapital("Kharkiv").setRegionSpace(31.418).setRegionPopulation(2696427));
-        addRegion(new Region(17).setRegionName("Rivnenska region").setRegionCapital("Rivne").setRegionSpace(20.051).setRegionPopulation(1159259));
-        addRegion(new Region(18).setRegionName("Khmelnytska region").setRegionCapital("Khmelnytskyi").setRegionSpace(20.629).setRegionPopulation(1309687));
-        addRegion(new Region(19).setRegionName("Ternopilska region").setRegionCapital("Ternopil").setRegionSpace(13.824).setRegionPopulation(1074923));
-        addRegion(new Region(20).setRegionName("Chernivetska region").setRegionCapital("Chernivtsi").setRegionSpace(8.096).setRegionPopulation(906600));
-        addRegion(new Region(21).setRegionName("Ivano-Frankivska region").setRegionCapital("Ivano-Frankivsk").setRegionSpace(13.927).setRegionPopulation(1381798));
-        addRegion(new Region(22).setRegionName("Lvivska region").setRegionCapital("Lviv").setRegionSpace(21.831).setRegionPopulation(2530326));
-        addRegion(new Region(23).setRegionName("Volynska region").setRegionCapital("Lutsk").setRegionSpace(20.144).setRegionPopulation(1043215));
-        addRegion(new Region(24).setRegionName("Zakarpatska region").setRegionCapital("Uzhhorod").setRegionSpace(12.753).setRegionPopulation(1259068));
-        addRegion(new Region(25).setRegionName("Republic of Crimea").setRegionCapital("Simferopil").setRegionSpace(0.0).setRegionPopulation(0));
+        ukraine.addPopulation(42248598).addCapital("Kyiv").addContinentName("Europe").addSquare(603.050);
+        addRegion(new Region(1).addRegionName("Kyivska region").addRegionCapital("Kyiv")
+                .addRegionSpace(28.121).addRegionPopulation(1732200));
+        addRegion(new Region(2).addRegionName("Zhytomyrska region").addRegionCapital("Zhytomyr")
+                .addRegionSpace(29.827).addRegionPopulation(1233202));
+        addRegion(new Region(3).addRegionName("Cherkasska region").addRegionCapital("Cherkassy")
+                .addRegionSpace(20.916).addRegionPopulation(1250925));
+        addRegion(new Region(4).addRegionName("Poltavska region").addRegionCapital("Poltava")
+                .addRegionSpace(28.750).addRegionPopulation(1462412));
+        addRegion(new Region(5).addRegionName("Chernihivska region").addRegionCapital("Chernihiv")
+                .addRegionSpace(31.903).addRegionPopulation(1054626));
+        addRegion(new Region(6).addRegionName("Vinnyntska region").addRegionCapital("Vinnytsya")
+                .addRegionSpace(26.492).addRegionPopulation(1616511));
+        addRegion(new Region(7).addRegionName("Odesska region").addRegionCapital("Odessa")
+                .addRegionSpace(33.314).addRegionPopulation(2395358));
+        addRegion(new Region(8).addRegionName("Kirovohradska region").addRegionCapital("Kropyvnytskyi")
+                .addRegionSpace(24.588).addRegionPopulation(999600));
+        addRegion(new Region(9).addRegionName("Mykolaivska region").addRegionCapital("Mykolaiv")
+                .addRegionSpace(24.585).addRegionPopulation(1164878));
+        addRegion(new Region(10).addRegionName("Khersonska region").addRegionCapital("Kherson")
+                .addRegionSpace(28.461).addRegionPopulation(1055649));
+        addRegion(new Region(11).addRegionName("Sumska region").addRegionCapital("Sumy")
+                .addRegionSpace(23.832).addRegionPopulation(1113200));
+        addRegion(new Region(12).addRegionName("Donetska region").addRegionCapital("Kramatorsk")
+                .addRegionSpace(26.517).addRegionPopulation(4320821));
+        addRegion(new Region(13).addRegionName("Luhanska region").addRegionCapital("Severodonetsk")
+                .addRegionSpace(26.683).addRegionPopulation(2167802));
+        addRegion(new Region(14).addRegionName("Dnipropetrovska region").addRegionCapital("Dnipro")
+                .addRegionSpace(31.923).addRegionPopulation(3285626));
+        addRegion(new Region(15).addRegionName("Zaporizhska region").addRegionCapital("Zaporizhzhya")
+                .addRegionSpace(27.183).addRegionPopulation(1765926));
+        addRegion(new Region(16).addRegionName("Kharkivska region").addRegionCapital("Kharkiv")
+                .addRegionSpace(31.418).addRegionPopulation(2696427));
+        addRegion(new Region(17).addRegionName("Rivnenska region").addRegionCapital("Rivne")
+                .addRegionSpace(20.051).addRegionPopulation(1159259));
+        addRegion(new Region(18).addRegionName("Khmelnytska region").addRegionCapital("Khmelnytskyi")
+                .addRegionSpace(20.629).addRegionPopulation(1309687));
+        addRegion(new Region(19).addRegionName("Ternopilska region").addRegionCapital("Ternopil")
+                .addRegionSpace(13.824).addRegionPopulation(1074923));
+        addRegion(new Region(20).addRegionName("Chernivetska region").addRegionCapital("Chernivtsi")
+                .addRegionSpace(8.096).addRegionPopulation(906600));
+        addRegion(new Region(21).addRegionName("Ivano-Frankivska region").addRegionCapital("Ivano-Frankivsk")
+                .addRegionSpace(13.927).addRegionPopulation(1381798));
+        addRegion(new Region(22).addRegionName("Lvivska region").addRegionCapital("Lviv")
+                .addRegionSpace(21.831).addRegionPopulation(2530326));
+        addRegion(new Region(23).addRegionName("Volynska region").addRegionCapital("Lutsk")
+                .addRegionSpace(20.144).addRegionPopulation(1043215));
+        addRegion(new Region(24).addRegionName("Zakarpatska region").addRegionCapital("Uzhhorod")
+                .addRegionSpace(12.753).addRegionPopulation(1259068));
+        addRegion(new Region(25).addRegionName("Republic of Crimea").addRegionCapital("Simferopil")
+                .addRegionSpace(0.0).addRegionPopulation(0));
         return ukraine;
     }
 

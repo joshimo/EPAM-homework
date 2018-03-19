@@ -12,22 +12,22 @@ public abstract class Country {
         this.countryName = countryName;
     }
 
-    public Country setContinentName(String continentName) {
+    public Country addContinentName(String continentName) {
         this.continentName = continentName;
         return this;
     }
 
-    public Country setCapital(String capital) {
+    public Country addCapital(String capital) {
         this.capital = capital;
         return this;
     }
 
-    public Country setPopulation(Integer population) {
+    public Country addPopulation(Integer population) {
         this.population = population;
         return this;
     }
 
-    public Country setSquare(Double square) {
+    public Country addSquare(Double square) {
         this.square = square;
         return this;
     }
@@ -53,17 +53,6 @@ public abstract class Country {
     }
 
     @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("Country name: " + countryName + "\n");
-        sb.append("Continent: " + continentName + "\n");
-        sb.append("Capital: " + capital + "\n");
-        sb.append("Total population: " + population + " people\n");
-        sb.append("Total square: " + square + " mln.sq.meters\n");
-        return sb.toString();
-    }
-
-    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -81,5 +70,16 @@ public abstract class Country {
         result = 31 * result + getCapital().hashCode();
         result = 31 * result + getSquare().hashCode();
         return result;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Country name: " + countryName + "\n");
+        sb.append("Continent: " + continentName + "\n");
+        sb.append("Capital: " + capital + "\n");
+        sb.append("Total population: " + population + " people\n");
+        sb.append("Total square: " + square + " mln.sq.meters\n");
+        return sb.toString();
     }
 }

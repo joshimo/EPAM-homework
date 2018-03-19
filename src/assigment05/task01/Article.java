@@ -2,7 +2,7 @@ package assigment05.task01;
 
 import java.util.ArrayList;
 import java.util.List;
-import static assigment05.printer.Printer.*;
+import static assigment05.printer.ConsolePrinter.*;
 
 /** 1. Создать объект класса Текст, используя класс Абзац. Методы: дополнить текст, вывести на консоль
  текст, заголовок текста.*/

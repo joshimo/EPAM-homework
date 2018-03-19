@@ -1,5 +1,5 @@
 package assigment05.task02;
-import static assigment05.printer.Printer.*;
+import static assigment05.printer.ConsolePrinter.*;
 import java.util.ArrayList;
 import java.util.List;
 

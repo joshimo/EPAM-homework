@@ -12,22 +12,22 @@ public class Region {
         this.regionId = regionId;
     }
 
-    public final Region setRegionName(String regionName) {
+    public final Region addRegionName(String regionName) {
         this.regionName = regionName;
         return this;
     }
 
-    public final Region setRegionCapital(String regionCapital) {
+    public final Region addRegionCapital(String regionCapital) {
         this.regionCapital = regionCapital;
         return this;
     }
 
-    public final Region setRegionSpace(double regionSpace) {
+    public final Region addRegionSpace(double regionSpace) {
         this.regionSpace = regionSpace;
         return this;
     }
 
-    public final Region setRegionPopulation(Integer regionPopulation) {
+    public final Region addRegionPopulation(Integer regionPopulation) {
         this.regionPopulation = regionPopulation;
         return this;
     }

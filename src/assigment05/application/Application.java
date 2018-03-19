@@ -12,6 +12,7 @@ public class Application {
 
     public static void main(String[] args){
         ukraine = Ukraine.create();
+        //printer.print("Capital: \n" + ukraine.getCapital());
         printer.print("Overall information \n" + ukraine.toString());
         print("Overall information \n" + ukraine.toString());
         printer.print("Total regions number: " + ukraine.getRegionsNumber() + "\n");
