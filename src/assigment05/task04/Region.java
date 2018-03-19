@@ -4,7 +4,7 @@ public class Region {
 
     private String regionName = "";
     private String regionCapital = "";
-    private double regionSpace = 0.0;
+    private Double regionSpace = 0.0;
     private Integer regionPopulation = 0;
     private final Integer regionId;
 
@@ -12,22 +12,22 @@ public class Region {
         this.regionId = regionId;
     }
 
-    public Region setRegionName(String regionName) {
+    public final Region setRegionName(String regionName) {
         this.regionName = regionName;
         return this;
     }
 
-    public Region setRegionCapital(String regionCapital) {
+    public final Region setRegionCapital(String regionCapital) {
         this.regionCapital = regionCapital;
         return this;
     }
 
-    public Region setRegionSpace(double regionSpace) {
+    public final Region setRegionSpace(double regionSpace) {
         this.regionSpace = regionSpace;
         return this;
     }
 
-    public Region setRegionPopulation(Integer regionPopulation) {
+    public final Region setRegionPopulation(Integer regionPopulation) {
         this.regionPopulation = regionPopulation;
         return this;
     }
@@ -59,6 +59,7 @@ public class Region {
         Region region = (Region) o;
         if (!regionName.equals(region.regionName)) return false;
         if (!regionCapital.equals(region.regionCapital)) return false;
+        if (!regionSpace.equals(region.regionSpace)) return false;
         return regionId.equals(region.regionId);
     }
 
@@ -66,6 +67,7 @@ public class Region {
     public int hashCode() {
         int result = regionName.hashCode();
         result = 31 * result + regionCapital.hashCode();
+        result = 31 * result + regionSpace.hashCode();
         result = 31 * result + regionId.hashCode();
         return result;
     }
@@ -83,6 +85,7 @@ public class Region {
             regionString.append("Region population: " + regionPopulation + "\n");
         else
             regionString.append("Region population:  not defined \n");
+        regionString.append("\n");
         return regionString.toString();
     }
 }
